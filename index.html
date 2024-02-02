@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1><a href="https://youtu.be/dQw4w9WgXcQ?si=cMBwqTRf5AMuZjdK" target="_blank" style="color: inherit; text-decoration: none;">To Do List</a></h1>
+    </div>
+    <div class="columns">
+      <div class="input-column">
+        <h2>Dodawanie Zadań</h2>
+          </br>
+        <div class="input-container">
+          <input type="text" id="titleInput" placeholder="Tytuł...">
+          <input type="text" id="myInput" placeholder="Opis...">
+          <input type="checkbox" id="priorityInput">
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+        <div>
+          <h3>O aplikacji:</h3>
+          <div class="paragraf">
+            <ul>
+              <li>Użytkownik może dodawać nowe zadania poprzez wpisanie tytułu, opisu i zaznaczenie opcji priorytetu.</li>
+              <li>Po naciśnięciu przycisku "Dodaj zadanie" zadanie zostanie dodane do listy zadań.</li>
+              <li>Użytkownik może usunąć zadanie, klikając na nie. Zadanie zostanie oznaczone jako usuwane, a następnie zniknie z listy po krótkim czasie.</li>
+              <li>Kliknięcie na zadaniu oznaczy je jako wykonane (checked), zmieniając kolor tła zadania.</li>
+              <li>Zadania mogą być oznaczone jako priorytetowe poprzez zaznaczenie opcji priorytetu. Zadania priorytetowe są wyświetlane na górze listy.</li>
+              <li>Zadania są zapisywane w lokalnym magazynie (localStorage) przeglądarki, co oznacza, że pozostaną dostępne nawet po odświeżeniu strony.</li>
+              <li>Jeśli użytkownik nie ma żadnych zadań, na stronie pojawi się informacja "Nie masz żadnych zadań".</li>
+              <li>Jeśli użytkownik próbuje dodać zadanie bez tytułu lub opisu, pojawi się alert z informacją o konieczności wprowadzenia przynajmniej jednego z nich.</li>
+            </ul>
+          </br> </br>
+            <p style="font-size: 12px;"><i>"leżałam na łóżku i słyszalam trzask i wylecialam a tu chłop stoi i ja mowie chłopie cos ty zrobił a on przepraszam"</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="list-column">
+        <center><h2>Lista</h2></center>
+        <ul id="myUL"></ul>
+      </div>
+    </div>
+    <div class="footer">
+     <p>Miłosz Cisek, Ignacy Salamon, </p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
